@@ -1,0 +1,85 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  padding: 2.5rem 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tagline {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.navbar {
+  background-color: #1e293b;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.75rem 0;
+}
+
+.navbar a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar li.active a {
+  color: #ffffff;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 4px;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1.5rem;
+}
+
+.about, .skills, .projects {
+  margin-bottom: 2.5rem;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skills li {
+  background-color: #e2e8f0;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1e293b;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
