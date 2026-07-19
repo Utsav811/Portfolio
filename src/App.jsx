@@ -1,26 +1,82 @@
-import Header from './components/Header'
-import NavBar from './components/NavBar'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Footer from './components/Footer'
-import './App.css'
+import NavBar from "./components/NavBar";
 
-const skillList = ['JavaScript', 'React', 'HTML', 'CSS', 'Node.js', 'Git', 'Python', 'NumPy', 'Pandas', 'Seaborn', 'Matplotlib', 'MongoDB', 'SQL', ]
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Projects from "./components/Projects";
+import NotFound from "./pages/NotFound";
+
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="app">
-      <Header name="Utsav's Portfolio" themeColor="#2563eb" />
+    <>
       <NavBar />
-      <main>
-        <About />
-        <Skills skillList={skillList} />
-        <Projects />
-      </main>
-      <Footer />
-    </div>
-  )
+
+      <Routes>
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/projects"
+          element={<Projects />}
+        />
+
+        <Route
+          path="/contact"
+          element={<Contact />}
+        />
+
+        <Route
+          path="*"
+          element={<NotFound />}
+        />
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
+>>>>>>> 747cae4 (Update portfolio: update name and router fixes)
+import NavBar from "./components/NavBar";
+
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Projects from "./components/Projects";
+import NotFound from "./pages/NotFound";
+
+import { Routes, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <>
+      <NavBar />
+
+      <Routes>
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/projects"
+          element={<Projects />}
+        />
+
+        <Route
+          path="/contact"
+          element={<Contact />}
+        />
+
+        <Route
+          path="*"
+          element={<NotFound />}
+        />
+      </Routes>
+    </>
+  );
+}
+
+export default App;
+>>>>>>> 747cae4 (Update portfolio: update name and router fixes)

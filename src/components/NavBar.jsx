@@ -1,24 +1,44 @@
-import { useState } from 'react'
+import { Link } from "react-router-dom";
 
 function NavBar() {
-  const sections = ['About', 'Skills', 'Projects', 'Footer']
-  const [active, setActive] = useState('About')
-
   return (
-    <nav className="navbar">
-      <ul>
-        {sections.map((section) => (
-          <li
-            key={section}
-            className={active === section ? 'active' : ''}
-            onClick={() => setActive(section)}
-          >
-            <a href={`#${section.toLowerCase()}`}>{section}</a>
-          </li>
-        ))}
-      </ul>
+    <nav>
+      <Link to="/">Home</Link>
+
+      {" | "}
+
+      <Link to="/projects">Projects</Link>
+
+      {" | "}
+
+      <Link to="/contact">Contact</Link>
     </nav>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
+>>>>>>> 747cae4 (Update portfolio: update name and router fixes)
+import { Link } from "react-router-dom";
+
+function NavBar() {
+  return (
+    <nav>
+      <Link to="/">Home</Link>
+
+      {" | "}
+
+      <Link to="/projects">
+        Projects
+      </Link>
+
+      {" | "}
+
+      <Link to="/contact">
+        Contact
+      </Link>
+    </nav>
+  );
+}
+
+export default NavBar;
+ 747cae4 (Update portfolio: update name and router fixes)
